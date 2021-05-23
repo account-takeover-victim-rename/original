@@ -1,5 +1,7 @@
 package main
 
+import "github.com/ventu-io/go-shortid"
+import "rsc.io/quote"
 import "fmt"
 
 // Hello returns a greeting for the named person.
@@ -13,5 +15,7 @@ func main() {
     // Get a greeting message and print it.
     message := Hello("Gladys")
     fmt.Println(message)
+    fmt.Println(quote.Go())
+    fmt.Println(shortid.Generate())
 }
 
